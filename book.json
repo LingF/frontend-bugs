@@ -1,0 +1,40 @@
+{
+	"root": "/",
+	"title": "前端知识库",
+	"variables": {
+		"authorName": "lizhao"
+	},
+	"page": {
+		"title": "前端知识库"
+	},
+	"plugins": [
+		"anchors",
+		"auto-summary",
+		"toggle-chapters",
+		"expandable-chapters-small",
+		"-lunr",
+		"-search",
+		"search-plus",
+		"watch"
+	],
+	"pluginsConfig": {
+		"auto-summary": {
+			"parts": {
+				"README.md": "前端bug库",
+				"docs/c1-浏览器常见问题/**/*.md": "c1-浏览器常见问题",
+				"docs/c2-移动端兼容问题/**/*.md": "c2-移动端兼容问题",
+				"docs/c3-html常见问题/**/*.md": "c3-html常见问题",
+				"docs/c4-css常见问题/**/*.md": "c4-css常见问题",
+				"docs/c5-js常见问题/**/*.md": "c5-js常见问题",
+				"docs/c6-其他问题/**/*.md": "c6-其他问题"
+			}
+		},
+		"watch": {
+            "files": [
+                "chapter-1/**/*",
+                "chapter-2/**/*",
+                "SUMMARY.md"
+            ]
+        }
+	}
+}

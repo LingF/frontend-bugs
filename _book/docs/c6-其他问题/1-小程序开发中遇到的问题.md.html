@@ -1,0 +1,442 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>小程序开发中遇到的问题 · 前端知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../c5-js常见问题/3-undefined is not a function.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">前端bug库</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前库知识库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">c1-浏览器常见问题</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../c1-浏览器常见问题/cookie发送不成功.html">
+            
+                <a href="../c1-浏览器常见问题/cookie发送不成功.html">
+            
+                    
+                    cookie发送不成功
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">c2-移动端兼容问题</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../c2-移动端兼容问题/0-移动端兼容性问题概览.html">
+            
+                <a href="../c2-移动端兼容问题/0-移动端兼容性问题概览.html">
+            
+                    
+                    移动端兼容性问题概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../c2-移动端兼容问题/1-移动端兼容性问题概览.html">
+            
+                <a href="../c2-移动端兼容问题/1-移动端兼容性问题概览.html">
+            
+                    
+                    虚拟键盘关闭后，元素错位(部分安卓机)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">c3-html常见问题</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../c3-html常见问题/图片间有空隙.html">
+            
+                <a href="../c3-html常见问题/图片间有空隙.html">
+            
+                    
+                    img图片之间的间距问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">c4-css常见问题</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../c4-css常见问题/0-css常见问题概览.html">
+            
+                <a href="../c4-css常见问题/0-css常见问题概览.html">
+            
+                    
+                    css常见问题概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../c4-css常见问题/1-样式错乱（chrome中正常，发版到线上出错）.html">
+            
+                <a href="../c4-css常见问题/1-样式错乱（chrome中正常，发版到线上出错）.html">
+            
+                    
+                    样式错乱（chrome中正常，发版到线上出错）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../c4-css常见问题/2-1像素边框显示不全.html">
+            
+                <a href="../c4-css常见问题/2-1像素边框显示不全.html">
+            
+                    
+                    1像素边框显示不全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">c5-js常见问题</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../c5-js常见问题/1-关于时间对象的夏令时问题.html">
+            
+                <a href="../c5-js常见问题/1-关于时间对象的夏令时问题.html">
+            
+                    
+                    关于时间对象的夏令时问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../c5-js常见问题/2-页面回退不刷新.html">
+            
+                <a href="../c5-js常见问题/2-页面回退不刷新.html">
+            
+                    
+                    页面回退不刷新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../c5-js常见问题/3-undefined is not a function.html">
+            
+                <a href="../c5-js常见问题/3-undefined is not a function.html">
+            
+                    
+                    undefined is not a function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">c6-其他问题</li>
+        
+        
+    
+        <li class="chapter active" data-level="7.1" data-path="1-小程序开发中遇到的问题.md.html">
+            
+                <a href="1-小程序开发中遇到的问题.md.html">
+            
+                    
+                    小程序开发中遇到的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >小程序开发中遇到的问题</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;"><a name="&#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;" class="plugin-anchor" href="#&#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;</h3>
+<h4 id="&#x5C0F;&#x7A0B;&#x5E8F;&#x76F8;&#x5173;&#x95EE;&#x9898;"><a name="&#x5C0F;&#x7A0B;&#x5E8F;&#x76F8;&#x5173;&#x95EE;&#x9898;" class="plugin-anchor" href="#&#x5C0F;&#x7A0B;&#x5E8F;&#x76F8;&#x5173;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x7A0B;&#x5E8F;&#x76F8;&#x5173;&#x95EE;&#x9898;:</h4>
+<ol>
+<li>&#x4E2A;&#x4EBA;&#x6216;&#x6D77;&#x5916;&#x516C;&#x4F17;&#x53F7;&#x4E0D;&#x652F;&#x6301;webview&#x5185;&#x5D4C;h5&#x9875;&#x9762;
+webview&#x4E2D;&#x5185;&#x5D4C;&#x7684;&#x94FE;&#x63A5;&#x6765;&#x6E90;&#x5FC5;&#x987B;&#x5728;&#x4E1A;&#x52A1;&#x57DF;&#x540D;&#x5185;&#x3002;</li>
+<li>navigator&#x8DF3;&#x8F6C;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x4E0D;&#x80FD;&#x662F;app.json&#x4E2D;tabBar.list&#x4E2D;&#x7684;&#x9875;&#x9762;</li>
+<li>wxss&#xFF0C;&#x5373;&#x5C0F;&#x7A0B;&#x5E8F;&#x6837;&#x5F0F;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x6837;&#x5F0F;&#x5D4C;&#x5957;</li>
+<li>&#x6E05;&#x9664;&#x7F13;&#x5B58;&#x95EE;&#x9898;
+ &#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177; -&gt; &#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;: &#x6709;&#x6E05;&#x9664;&#x7F13;&#x5B58;&#x529F;&#x80FD;
+ &#x79FB;&#x52A8;&#x7AEF;: &#x5220;&#x9664;&#x5C0F;&#x7A0B;&#x5E8F;</li>
+<li>&#x7248;&#x672C;&#x7684;&#x5224;&#x65AD;
+ &#x76EE;&#x524D;(2018-9-25)&#xFF0C;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E2D;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x5224;&#x65AD;&#x5F00;&#x53D1;&#x7248;&#x3001;&#x4F53;&#x9A8C;&#x7248;&#x3001;&#x7EBF;&#x4E0A;&#x7248;&#x7684;api</li>
+</ol>
+<h4 id="&#x4F7F;&#x7528;mpvue&#x5F00;&#x53D1;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;"><a name="&#x4F7F;&#x7528;mpvue&#x5F00;&#x53D1;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;" class="plugin-anchor" href="#&#x4F7F;&#x7528;mpvue&#x5F00;&#x53D1;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a><a href="https://juejin.im/post/5afa81a26fb9a07aa5427377" target="_blank">&#x4F7F;&#x7528;mpvue&#x5F00;&#x53D1;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;</a></h4>
+<blockquote>
+<p>mpvue &#x662F;&#x4E00;&#x4E2A;&#x4F7F;&#x7528; Vue.js &#x5F00;&#x53D1;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x524D;&#x7AEF;&#x6846;&#x67B6;&#xFF08;&#x7F8E;&#x56E2;&#x7684;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#xFF09;&#x3002;&#x6846;&#x67B6;&#x57FA;&#x4E8E; Vue.js &#x6838;&#x5FC3;&#xFF0C;mpvue &#x4FEE;&#x6539;&#x4E86; Vue.js &#x7684; runtime &#x548C; compiler &#x5B9E;&#x73B0;&#xFF0C;&#x4F7F;&#x5176;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x4E3A;&#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x5F15;&#x5165;&#x4E86;&#x6574;&#x5957; Vue.js &#x5F00;&#x53D1;&#x4F53;&#x9A8C;&#x3002;</p>
+</blockquote>
+<ol>
+<li>&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;&#x95EE;&#x9898;&#x3002;&#x5C0F;&#x7A0B;&#x5E8F;&#x9ED8;&#x8BA4;&#x7528;bind&#x3002;mpvue&#x4E2D;&#x7528;@&#x4EE3;&#x66FF;vue</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../c5-js常见问题/3-undefined is not a function.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: undefined is not a function">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"小程序开发中遇到的问题","level":"7.1","depth":1,"previous":{"title":"undefined is not a function","level":"6.3","depth":1,"path":"docs/c5-js常见问题/3-undefined is not a function.md","ref":"docs/c5-js常见问题/3-undefined is not a function.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","auto-summary","toggle-chapters","expandable-chapters-small","-lunr","-search","search-plus","watch"],"root":"/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{"parts":{"README.md":"前端bug库","docs/c1-浏览器常见问题/**/*.md":"c1-浏览器常见问题","docs/c2-移动端兼容问题/**/*.md":"c2-移动端兼容问题","docs/c3-html常见问题/**/*.md":"c3-html常见问题","docs/c4-css常见问题/**/*.md":"c4-css常见问题","docs/c5-js常见问题/**/*.md":"c5-js常见问题","docs/c6-其他问题/**/*.md":"c6-其他问题"}},"watch":{"files":["chapter-1/**/*","chapter-2/**/*","SUMMARY.md"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"toggle-chapters":{},"search-plus":{}},"theme":"default","page":{"title":"前端知识库"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"authorName":"lizhao"},"title":"前端知识库","gitbook":"*"},"file":{"path":"docs/c6-其他问题/1-小程序开发中遇到的问题.md.md","mtime":"2018-10-15T02:45:35.231Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-15T09:03:41.380Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
